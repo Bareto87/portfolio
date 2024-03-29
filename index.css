@@ -29,6 +29,7 @@ header {
     right: 0;
     margin: 0 auto;
     width: 97%;
+    z-index: 1000;
 }
 
 .logo{
@@ -150,7 +151,7 @@ h2{
 }
 
 .datos-about img{
-    width: 40px;
+    width: 60px;
 }
 
 .datos-about{
@@ -173,9 +174,14 @@ h2{
     background-color: var(--colorTerciario);
 }
 
+.icon-container{
+    margin: 20px 20px;
+}
+
 .hover-icon {
     display: none;
 }
+
 
 .icon-container:hover .hover-icon {
     display: inline-block;
@@ -266,6 +272,29 @@ h2{
 .derecha {
     flex: 1;
     overflow: hidden;
+    position: relative;
+}
+
+.icon-proyect {
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centra horizontalmente */
+    width: 100%; /* Ajusta el ancho del contenedor para que los iconos estén en línea */
+    display: flex; /* Permite que los iconos estén en línea */
+    justify-content:end; /* Centra los iconos horizontalmente */
+    z-index: 1; /* Asegura que estén encima de la imagen */
+
+}
+
+.logo-proyect {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px; /* Ajusta el espacio entre los iconos */
+}
+
+.logo-proyect:hover {
+    cursor: pointer;
 }
 
 .imagen-tarjeta {
@@ -273,6 +302,19 @@ h2{
     height: 100%;
     object-fit: cover; /* Para que la imagen cubra completamente el contenedor */
     transition: transform 0.3s; /* Agrega transición para el efecto de zoom */
+    position: relative; /* Añade posición relativa para que los elementos absolutos se posicionen respecto a este contenedor */
+    
+}
+
+.imagen-tarjeta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color oscuro semitransparente */
+    z-index: 0; /* Asegura que esté detrás de los iconos */
 }
 
 .titulo-caja{

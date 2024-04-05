@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +11,23 @@
 <body>
 
 <!--NAVEGADOR-->
-
-    <header>
-        <img class="logo" src="img/logo.png">
-        <nav>
-            <a class="secciones" href="#">Inicio</a>
-            <a class="secciones" href="#about">Sobre mí</a>
-            <a class="secciones" href="#proyectos">Proyectos</a>
-            <a class="secciones" href="#contacto">Contactos</a>
-        </nav>
+<main>
+    <header class="header">
+        <div class="logo-header">
+            <a href=""><img class="logo" src="img/logo.png"></a>
+        </div>
+        <div class="nav-menu">
+            <input type="checkbox" id="check">    
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="img/icons8-menú.svg" alt=""></i>
+            </label>
+            <ul>
+                <li><a class="secciones" href="#">Inicio</a></li>
+                <li><a class="secciones" href="#about">Sobre mí</a></li>
+                <li><a class="secciones" href="#proyectos">Proyectos</a></li>
+                <li><a class="secciones" href="#contacto">Contactos</a></li>
+            </ul>
+        </div>
     </header>
 
 <!--APARTADO INICIO-->
@@ -33,7 +41,6 @@
                     <a href="https://github.com/Bareto87"  target="_blank"><img src="img/github.png" alt=""></a>
                     <a href="https://www.linkedin.com/in/alvaroperezzafra/"  target="_blank"><img src="img/linkedin.png" alt=""></a>
                     <a href="https://drive.google.com/file/d/1gqfwkb8Q9xRRKhby7Ne6Zo6N28qHjvuV/view?usp=sharing" target="_blank"><img src="img/download.png" alt=""></a>
-                    <!--<button onclick="descargarPDF()" src="img/download.png"></button>-->
                 </div>
                 <div class="linea-horizontal"></div>
             </div>
@@ -46,6 +53,9 @@
         <div class="container-about">
             <!--SOBRE MI-->
             <div class="datos-about">
+                <div class="loader-container">
+                    <div class="loader"></div>
+                </div>
                 <a class="titulo-about">Sobre mí<span class="punto-about">.</span></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero eget orci accumsan imperdiet. 
                     Suspendisse potenti. Praesent eu elit eu elit consequat posuere. Nulla facilisi. Vivamus hendrerit justo 
@@ -65,33 +75,36 @@
             <div class="linea-vertical"></div>
             <!--CONOCIMIENTOS-->
             <div class="datos-about">
-                <a class="titulo-about">Conocimientos<span class="punto-about">.</span></a>    
+                <div class="loader-container">
+                    <div class="loader"></div>
+                </div>
+                <a class="titulo-about">Conocimientos<span class="punto-about">.</span></a>
                     <div class="subtitulo-about">
                         <p>· Herramientas</p>
                         <div class="iconos-about">
                             <div class="icon-container">
-                                <img class="original-icon" src="img/vscode.png" alt="">
-                                <img class="hover-icon" src="img/vscode-color.png" alt="">
+                                <img class="original-icon" src="img/vscode.png">
+                                <img class="hover-icon" src="img/vscode-color.png">
                             </div>                        
                             <div class="icon-container">
-                                <img class="original-icon" src="img/androidstudio.png" alt="">
-                                <img class="hover-icon" src="img/androidstudio-color.png" alt="">
+                                <img class="original-icon" src="img/androidstudio.png">
+                                <img class="hover-icon" src="img/androidstudio-color.png">
                             </div>
                             <div class="icon-container">
-                                <img class="original-icon" src="img/github.png" alt="">
-                                <img class="hover-icon" src="img/github-color.png" alt="">
+                                <img class="original-icon" src="img/github.png">
+                                <img class="hover-icon" src="img/github-color.png">
                             </div>
                             <div class="icon-container">
-                                <img class="original-icon" src="img/cmd.png" alt="">
-                                <img class="hover-icon" src="img/cmd-color.png" alt="">
+                                <img class="original-icon" src="img/cmd.png">
+                                <img class="hover-icon" src="img/cmd-color.png">
                             </div>
                             <div class="icon-container" >
-                                <img class="original-icon" src="img/mysql.png" alt="">
-                                <img class="hover-icon" src="img/mysql-color.png" alt="">
+                                <img class="original-icon" src="img/mysql.png">
+                                <img class="hover-icon" src="img/mysql-color.png">
                             </div>
                             <div class="icon-container">
-                                <img class="original-icon" src="img/git.png" alt="">
-                                <img class="hover-icon" src="img/git-color.png" alt="" >
+                                <img class="original-icon" src="img/git.png">
+                                <img class="hover-icon" src="img/git-color.png">
                             </div>
                         </div>
                     </div>
@@ -99,24 +112,24 @@
                         <p>· Lenguajes</p>
                         <div class="iconos-about">
                             <div  class="icon-container">
-                                    <img class="original-icon" src="img/html.png" alt="">
-                                    <img class="hover-icon" src="img/html-color.png" alt="">
+                                    <img class="original-icon" src="img/html.png">
+                                    <img class="hover-icon" src="img/html-color.png">
                             </div>
                             <div class="icon-container">
-                                <img class="original-icon" src="img/css.png" alt="">
-                                <img class="hover-icon" src="img/css-color.png" alt="">
+                                <img class="original-icon" src="img/css.png">
+                                <img class="hover-icon" src="img/css-color.png">
                             </div>
                             <div class="icon-container">
-                                <img class="original-icon" src="img/js.png" alt="">
-                                <img class="hover-icon" src="img/js-color.png" alt="">
+                                <img class="original-icon" src="img/js.png">
+                                <img class="hover-icon" src="img/js-color.png">
                             </div>
                             <div class="icon-container">
-                                <img class="original-icon" src="img/kotlin.png" alt="">
-                                <img class="hover-icon" src="img/kotlin-color.png" alt="" >
+                                <img class="original-icon" src="img/kotlin.png">
+                                <img class="hover-icon" src="img/kotlin-color.png">
                             </div>
                             <div class="icon-container">
-                                <img class="original-icon" src="img/css.png" alt="">
-                                <img class="hover-icon" src="img/css-color.png" alt="">
+                                <img class="original-icon" src="img/css.png" >
+                                <img class="hover-icon" src="img/css-color.png">
                             </div>
                         </div>
                     </div>
@@ -124,8 +137,8 @@
                         <p >· Aprendiendo</p>
                         <div class="iconos-about">
                             <div class="icon-container" >
-                                <img class="original-icon" src="img/reactjs.png" alt="">
-                                <img class="hover-icon" src="img/reactjs-color.png" alt="">
+                                <img class="original-icon" src="img/reactjs.png">
+                                <img class="hover-icon" src="img/reactjs-color.png">
                             </div>
                         </div>
                     </div>
@@ -137,11 +150,14 @@
     <section id="proyectos">
         <div class="container-proyectos">
             <div class="datos-proyectos">
+                <div class="loader-container">
+                    <div class="loader"></div>
+                </div>
                 <a class="titulo-proyectos">Proyectos<span class="punto-proyectos">.</span></a>
             </div>
         </div>
             <div class="fila-proyectos">
-                <!--<a href="https://p1-peliculas-cursoreact.netlify.app/" target="_blank" class="tarjeta-enlace">-->
+
                     <div class="tarjeta-proyectos">
                     <div class="izquierda">
                         <p class="titulo-caja">Peliculas</p>
@@ -153,15 +169,18 @@
                             </div>
                     </div>
                     <div class="derecha">
-                        <div class="icon-proyect" style="padding-right: 15px; padding-left: 100px;">
-                            <img class="logo-proyect" src="img/github-color.png" >
-                            <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
-                        </div> 
+                        <div class="icon-proyect">
+                            <a href="https://github.com/Bareto87/CursoReactJS/tree/main/1-Peliculas" target="_blank">
+                                <img class="logo-proyect" src="img/github-color.png">
+                            </a>
+                            <a href="https://p1-peliculas-cursoreact.netlify.app/" target="_blank">
+                                <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
+                            </a>
+                        </div>
                         <img src="img/peliculas.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
                     </div>
                         </div>
-                    </a>
-                    <!--<a href="https://p2-kanban-cursoreact.netlify.app/" target="_blank" class="tarjeta-enlace">-->
+                        
                         <div class="tarjeta-proyectos">
                     <div class="izquierda">
                         <p class="titulo-caja">Kanban</p>
@@ -173,61 +192,80 @@
                             </div>
                 </div>
                 <div class="derecha">
-                    <div class="icon-proyect" style="padding-right: 15px; padding-left: 100px;">
-                        <img class="logo-proyect" src="img/github.png">
-                        <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
-                    </div> 
+                    <div class="icon-proyect">
+                        <a href="https://github.com/Bareto87/CursoReactJS/tree/main/2-kanban" target="_blank">
+                            <img class="logo-proyect" src="img/github-color.png">
+                        </a>
+                        <a href="https://p2-kanban-cursoreact.netlify.app/" target="_blank">
+                            <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
+                        </a>
+                    </div>
                     <img src="img/kanban.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
                 </div>
                     </div>
-                </a>
-        </div>
-<!--
-            <div class="fila-proyectos">
-            <a href="https://www.sofascore.com/" target="_blank" class="tarjeta-enlace">
-                <div class="tarjeta-proyectos">
-                <div class="izquierda">
-                    <p class="titulo-caja">Pokedex</p>
-                    <p class="descripcion-caja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero eget orci accumsan imperdiet. 
-                        Suspendisse potenti. Praesent eu elit eu elit consequat posuere. Nulla facilisi. Vivamus hendrerit justo 
-                        nec dui consectetur, a scelerisque libero convallis. </p>
-                <div class="etiquetas-proyectos">
-                    <span class="etiqueta-proyectos etiqueta-html">HTML</span>
-                    <span class="etiqueta-proyectos etiqueta-css">CSS</span>
-                    <span class="etiqueta-proyectos etiqueta-js">JavaScript</span>
-                </div>
-                </div>
-                <div class="derecha">
-                    <img src="img/logo.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
-                </div>
+                    
                     </div>
-                </a>
-                <a href="https://www.sofascore.com/" target="_blank" class="tarjeta-enlace">
-                    <div class="tarjeta-proyectos">
-                <div class="izquierda">
-                    <p class="titulo-caja">Pokedex</p>
-                    <p class="descripcion-caja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero eget orci accumsan imperdiet. 
-                        Suspendisse potenti. Praesent eu elit eu elit consequat posuere. Nulla facilisi. Vivamus hendrerit justo 
-                        nec dui consectetur, a scelerisque libero convallis. </p>
-                        <div class="etiquetas-proyectos">
-                            <span class="etiqueta-proyectos etiqueta-html">HTML</span>
-                            <span class="etiqueta-proyectos etiqueta-css">CSS</span>
-                            <span class="etiqueta-proyectos etiqueta-js">JavaScript</span>
+
+                    <div class="fila-proyectos">
+
+                        <div class="tarjeta-proyectos">
+                        <div class="izquierda">
+                            <p class="titulo-caja">Peliculas</p>
+                            <p class="descripcion-caja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero eget orci accumsan imperdiet. 
+                                Suspendisse potenti. Praesent eu elit eu elit consequat posuere. Nulla facilisi. Vivamus hendrerit justo 
+                                nec dui consectetur, a scelerisque libero convallis. </p>
+                                <div class="etiquetas-proyectos">
+                                    <span class="etiqueta-proyectos etiqueta-reactjs">ReactJS</span>
+                                </div>
                         </div>
-            </div>
-            <div class="derecha">
-                <img src="img/logo.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
-            </div>
-                </div>
-            </a>
-    </div>
-    -->
+                        <div class="derecha">
+                            <div class="icon-proyect">
+                                <a href="https://github.com/Bareto87/CursoReactJS/tree/main/1-Peliculas" target="_blank">
+                                    <img class="logo-proyect" src="img/github-color.png">
+                                </a>
+                                <a href="https://p1-peliculas-cursoreact.netlify.app/" target="_blank">
+                                    <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
+                                </a>
+                            </div>
+                            <img src="img/peliculas.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
+                        </div>
+                            </div>
+                            
+                            <div class="tarjeta-proyectos">
+                        <div class="izquierda">
+                            <p class="titulo-caja">Kanban</p>
+                            <p class="descripcion-caja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero eget orci accumsan imperdiet. 
+                                Suspendisse potenti. Praesent eu elit eu elit consequat posuere. Nulla facilisi. Vivamus hendrerit justo 
+                                nec dui consectetur, a scelerisque libero convallis. </p>
+                                <div class="etiquetas-proyectos">
+                                    <span class="etiqueta-proyectos etiqueta-reactjs">ReactJS</span>
+                                </div>
+                    </div>
+                    <div class="derecha">
+                        <div class="icon-proyect">
+                            <a href="https://github.com/Bareto87/CursoReactJS/tree/main/2-kanban" target="_blank">
+                                <img class="logo-proyect" src="img/github-color.png">
+                            </a>
+                            <a href="https://p2-kanban-cursoreact.netlify.app/" target="_blank">
+                                <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
+                            </a>
+                        </div>
+                        <img src="img/kanban.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
+                    </div>
+                        </div>
+                        
+                        </div>
+
+        </div>
     </section>
 
 <!--APARTADO CONTACTO-->
     <section id="contacto">
         <div class="container-contacto">
             <div class="datos-contacto">
+                <div class="loader-container">
+                    <div class="loader"></div>
+                </div>
                 <a class="titulo-contacto">Contacto<span class="punto-contacto">.</span></a>
             </div>
         </div>
@@ -241,7 +279,7 @@
                         <textarea id="mensaje" name="mensaje" maxlength="200" required></textarea>
 
             <div class="error" id="errorCorreo"></div>
-                <input type="submit" value="ENVIAR">
+            <button type="submit">ENVIAR</button>
                 </form>
             </div>
     </section>
@@ -249,4 +287,5 @@
     <script src="index.js"></script>
 
 </body>
+</main>
 </html>

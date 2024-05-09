@@ -49,14 +49,15 @@
     </section>
 
 <!--APARTADO SOBRE MI-->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container-about">
             <!--SOBRE MI-->
-            <div class="datos-about">
+            <div class="sobremi">
+            <!--BOTON ANIMADO-->
                 <div class="loader-container">
                     <div class="loader"></div>
                 </div>
-                <a class="titulo-about">Sobre mí<span class="punto-about">.</span></a>
+                <a id="sobremi" class="titulo-about">Sobre mí<span class="punto-about">.</span></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero eget orci accumsan imperdiet. 
                     Suspendisse potenti. Praesent eu elit eu elit consequat posuere. Nulla facilisi. Vivamus hendrerit justo 
                     nec dui consectetur, a scelerisque libero convallis. Duis sit amet ligula vitae elit tincidunt consequat.
@@ -74,7 +75,8 @@
             </div>
             <div class="linea-vertical"></div>
             <!--CONOCIMIENTOS-->
-            <div class="datos-about">
+            <div class="conocimientos">
+            <!--BOTON ANIMADO-->
                 <div class="loader-container">
                     <div class="loader"></div>
                 </div>
@@ -147,9 +149,11 @@
     </section>
 
 <!--APARTADO PROYECTOS-->
-    <section id="proyectos">
+
+    <section class="proyectos" id="proyectos">
         <div class="container-proyectos">
             <div class="datos-proyectos">
+        <!--BOTON ANIMADO-->
                 <div class="loader-container">
                     <div class="loader"></div>
                 </div>
@@ -157,8 +161,7 @@
             </div>
         </div>
             <div class="fila-proyectos">
-
-                    <div class="tarjeta-proyectos">
+                <div class="tarjeta-proyectos">
                     <div class="izquierda">
                         <p class="titulo-caja">Peliculas</p>
                         <p class="descripcion-caja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero eget orci accumsan imperdiet. 
@@ -173,14 +176,13 @@
                             <a href="https://github.com/Bareto87/CursoReactJS/tree/main/1-Peliculas" target="_blank">
                                 <img class="logo-proyect" src="img/github-color.png">
                             </a>
-                            <a href="https://p1-peliculas-cursoreact.netlify.app/" target="_blank">
+                            <a href="https://1-peliculas-reactjs.netlify.app/" target="_blank">
                                 <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
                             </a>
                         </div>
                         <img src="img/peliculas.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
                     </div>
                         </div>
-                        
                         <div class="tarjeta-proyectos">
                     <div class="izquierda">
                         <p class="titulo-caja">Kanban</p>
@@ -190,98 +192,94 @@
                             <div class="etiquetas-proyectos">
                                 <span class="etiqueta-proyectos etiqueta-reactjs">ReactJS</span>
                             </div>
-                </div>
-                <div class="derecha">
-                    <div class="icon-proyect">
-                        <a href="https://github.com/Bareto87/CursoReactJS/tree/main/2-kanban" target="_blank">
-                            <img class="logo-proyect" src="img/github-color.png">
-                        </a>
-                        <a href="https://p2-kanban-cursoreact.netlify.app/" target="_blank">
-                            <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
-                        </a>
-                    </div>
-                    <img src="img/kanban.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
-                </div>
-                    </div>
-                    
-                    </div>
-
-                    <div class="fila-proyectos">
-
-                        <div class="tarjeta-proyectos">
-                        <div class="izquierda">
-                            <p class="titulo-caja">Peliculas</p>
-                            <p class="descripcion-caja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero eget orci accumsan imperdiet. 
-                                Suspendisse potenti. Praesent eu elit eu elit consequat posuere. Nulla facilisi. Vivamus hendrerit justo 
-                                nec dui consectetur, a scelerisque libero convallis. </p>
-                                <div class="etiquetas-proyectos">
-                                    <span class="etiqueta-proyectos etiqueta-reactjs">ReactJS</span>
-                                </div>
-                        </div>
-                        <div class="derecha">
-                            <div class="icon-proyect">
-                                <a href="https://github.com/Bareto87/CursoReactJS/tree/main/1-Peliculas" target="_blank">
-                                    <img class="logo-proyect" src="img/github-color.png">
-                                </a>
-                                <a href="https://p1-peliculas-cursoreact.netlify.app/" target="_blank">
-                                    <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
-                                </a>
-                            </div>
-                            <img src="img/peliculas.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
-                        </div>
-                            </div>
-                            
-                            <div class="tarjeta-proyectos">
-                        <div class="izquierda">
-                            <p class="titulo-caja">Kanban</p>
-                            <p class="descripcion-caja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero eget orci accumsan imperdiet. 
-                                Suspendisse potenti. Praesent eu elit eu elit consequat posuere. Nulla facilisi. Vivamus hendrerit justo 
-                                nec dui consectetur, a scelerisque libero convallis. </p>
-                                <div class="etiquetas-proyectos">
-                                    <span class="etiqueta-proyectos etiqueta-reactjs">ReactJS</span>
-                                </div>
                     </div>
                     <div class="derecha">
                         <div class="icon-proyect">
                             <a href="https://github.com/Bareto87/CursoReactJS/tree/main/2-kanban" target="_blank">
                                 <img class="logo-proyect" src="img/github-color.png">
                             </a>
-                            <a href="https://p2-kanban-cursoreact.netlify.app/" target="_blank">
+                            <a href="https://2-kanban-reactjs.netlify.app/" target="_blank">
                                 <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
                             </a>
                         </div>
                         <img src="img/kanban.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
                     </div>
                         </div>
-                        
+            </div>
+            <div class="fila-proyectos">
+                <div class="tarjeta-proyectos">
+                    <div class="izquierda">
+                        <p class="titulo-caja">Peliculas</p>
+                        <p class="descripcion-caja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero eget orci accumsan imperdiet. 
+                            Suspendisse potenti. Praesent eu elit eu elit consequat posuere. Nulla facilisi. Vivamus hendrerit justo 
+                            nec dui consectetur, a scelerisque libero convallis. </p>
+                            <div class="etiquetas-proyectos">
+                                <span class="etiqueta-proyectos etiqueta-reactjs">ReactJS</span>
+                            </div>
+                    </div>
+                    <div class="derecha">
+                        <div class="icon-proyect">
+                            <a href="https://github.com/Bareto87/CursoReactJS/tree/main/1-Peliculas" target="_blank">
+                                <img class="logo-proyect" src="img/github-color.png">
+                            </a>
+                            <a href="https://1-peliculas-reactjs.netlify.app/" target="_blank">
+                                <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
+                            </a>
                         </div>
-
-        </div>
+                        <img src="img/peliculas.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
+                    </div>
+                        </div>
+                        <div class="tarjeta-proyectos">
+                    <div class="izquierda">
+                        <p class="titulo-caja">Kanban</p>
+                        <p class="descripcion-caja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero eget orci accumsan imperdiet. 
+                            Suspendisse potenti. Praesent eu elit eu elit consequat posuere. Nulla facilisi. Vivamus hendrerit justo 
+                            nec dui consectetur, a scelerisque libero convallis. </p>
+                            <div class="etiquetas-proyectos">
+                                <span class="etiqueta-proyectos etiqueta-reactjs">ReactJS</span>
+                                <span class="etiqueta-proyectos etiqueta-html">HTML</span>
+                                <span class="etiqueta-proyectos etiqueta-css">CSS</span>
+                                <span class="etiqueta-proyectos etiqueta-js">JavaScript</span>
+                            </div>
+                    </div>
+                    <div class="derecha">
+                        <div class="icon-proyect">
+                            <a href="https://github.com/Bareto87/CursoReactJS/tree/main/2-kanban" target="_blank">
+                                <img class="logo-proyect" src="img/github-color.png">
+                            </a>
+                            <a href="https://2-kanban-reactjs.netlify.app/" target="_blank">
+                                <img class="logo-proyect" src="img/demo.png" style="padding-right: 50px;">
+                            </a>
+                        </div>
+                        <img src="img/kanban.png" alt="Imagen de la tarjeta" class="imagen-tarjeta">
+                    </div>
+                        </div>
+            </div>
     </section>
 
 <!--APARTADO CONTACTO-->
-    <section id="contacto">
+    <section class="contacto" id="contacto">
         <div class="container-contacto">
             <div class="datos-contacto">
+        <!--BOTON ANIMADO-->
                 <div class="loader-container">
                     <div class="loader"></div>
                 </div>
                 <a class="titulo-contacto">Contacto<span class="punto-contacto">.</span></a>
             </div>
         </div>
-            <div class="formulario-contacto">
-                <form action="#" method="post">
-                    <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    <label for="correo">Correo:</label>
-                        <input type="email" id="correo" name="correo" required>
-                    <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" maxlength="200" required></textarea>
-
-            <div class="error" id="errorCorreo"></div>
-            <button type="submit">ENVIAR</button>
-                </form>
-            </div>
+        <div class="formulario-contacto">
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" maxlength="200" required></textarea>
+        <div class="error" id="errorCorreo"></div>
+        <button type="submit">ENVIAR</button>
+            </form>
+        </div>
     </section>
 
     <script src="index.js"></script>

@@ -41,6 +41,7 @@ header {
 }
 
 .logo-header img{
+    padding-top: 6px;
     width: 50px;
 }
 
@@ -53,6 +54,7 @@ header {
 .nav-menu a{
     color: var(--colorSecundario);
     padding: 15px;
+    margin-right: 25px;
 }
 
 .nav-menu a:hover{
@@ -114,9 +116,11 @@ header {
 /* INICIO */
 
 .inicio{
-    height: 70vh;
+    height: 100vh;
     transform: translateX(100%);
     transition: transform 0.4s ease;
+    background-color: #ff0000;
+    padding-top: 10px;
 }
 
 .inicio:nth-of-type(even) {
@@ -234,6 +238,7 @@ header {
     height: 100vh;
     transform: translateX(100%);
     transition: transform 0.4s ease;
+    background-color: #F0DB4F;
 }
 
 .container-about {
@@ -385,10 +390,10 @@ header {
 /*-----------------------------------------------------------------------------------------------------------------------*/
 
 .proyectos{
-    height: 90vh;
-    margin-bottom: 200px;
+    height: 100vh;
     transform: translateX(100%);
     transition: transform 0.4s ease;
+    background-color: #264DE4;
 }
 
 .container-proyectos {
@@ -422,7 +427,7 @@ header {
 .tarjeta-proyectos {
     display: flex;
     width: 700px;
-    height: 300px;
+    height: 250px;
     margin: 20px;
     margin: 20px;
     border: 1px solid var(--colorSecundario);
@@ -656,10 +661,10 @@ header {
 /*-----------------------------------------------------------------------------------------------------------------------*/
 
 .contacto{
-    margin-bottom: 200px;
-    height: 90vh;
+    height: 100vh;
     transform: translateX(100%);
     transition: transform 0.4s ease;
+    background-color: #00D8FF;
 }
 
 .container-contacto {
